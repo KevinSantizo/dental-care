@@ -5,7 +5,6 @@ import 'package:dentalcare/src/pages/patients.dart';
 import 'package:dentalcare/src/pages/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -110,6 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       PersistentBottomNavBarItem(
         iconSize: 30.0,
+        inactiveIcon: Icon(Ionicons.search_outline),
         icon: Icon(Feather.settings), 
         activeColorPrimary: Color(0xFF59BEB6),
         inactiveColorPrimary: Color(0xff2F4A58),
